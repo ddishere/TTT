@@ -85,7 +85,7 @@ void move_done(std::string choice, std::vector<char>& top,std::vector<char>& mid
     turns++;
   }
 }
-
+//check to see if a winning combination was done, if so it tells us who the winner is and ends it.
 void end_game(bool& p1,bool& p2, bool win, std::vector<char>& top,std::vector<char>& middle,std::vector<char>& bottom, char p2_o, char p1_x, int& turns){
   if(bottom[0] == 'x' && bottom[1] == 'x' && bottom[2] == 'x'){
     p1 = true;
